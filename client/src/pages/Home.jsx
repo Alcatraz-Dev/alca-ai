@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Card, FormField, Loader } from "../components/index";
+import { Card, FormField, Loader } from "../components/index.js";
 
 const RenderCards = ({ data, title }) => {
   if (data?.length > 0) {
@@ -24,15 +24,12 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(
-        "https://dalle-arbb.onrender.com/api/v1/post",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch("https://alca-ai.onrender.com/api/v1/post", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       if (response.ok) {
         const result = await response.json();

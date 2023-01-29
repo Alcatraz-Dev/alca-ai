@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { preview } from "../assets";
-import { getRandomPrompt } from "../utils";
-import { FormField, Loader } from "../components";
+import { preview } from "../assets/index.js";
+import { getRandomPrompt } from "../utils/index.js";
+import { FormField, Loader } from "../components/index.js";
 
 const CreatePost = () => {
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          "https://dalle-arbb.onrender.com/api/v1/dalle",
+          "https://alca-ai.onrender.com/api/v1/dalle",
           {
             method: "POST",
             headers: {
@@ -61,7 +61,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://dalle-arbb.onrender.com/api/v1/post",
+          "https://alca-ai.onrender.com/api/v1/post",
           {
             method: "POST",
             headers: {
