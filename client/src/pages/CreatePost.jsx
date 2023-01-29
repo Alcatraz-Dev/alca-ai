@@ -89,7 +89,7 @@ const CreatePost = () => {
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
-          Generate an imaginative image through DALL-E AI and share it with the
+          Generate an imaginative image through ALCA AI and share it with the
           community
         </p>
       </div>
