@@ -92,6 +92,14 @@ const CreatePost = () => {
           Generate an imaginative image through ALCA AI and share it with the
           community
         </p>
+        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
+          <span className="font-semibold mt-2 text-[#5a64a4] text-[14px] max-w-[500px]">
+            Info :
+          </span>{" "}
+          to get beautiful images, follow this illustration in writing your
+          prompt, "Mood/Emotion + Subject+ Setting (HD , 4K , 8K ...) + Purpose"
+          Or Click surprise me button .
+        </p>
       </div>
 
       <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
